@@ -21,7 +21,7 @@ public class HelloController {
 	}
 	@GetMapping(path="/hello-world/path-variable/{name}")
 	public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
-		throw new RuntimeException("Exception occurred contact support");
-		//return new HelloWorldBean(String.format("Hello World %s", name));
+		//throw new RuntimeException("Exception occurred contact support");
+		return new HelloWorldBean(String.format("Hello World %s", name));
 	}
 }
